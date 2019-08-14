@@ -42,7 +42,7 @@ init_dir "$STDERR_DIR" "$STDOUT_DIR"
 
 echo "launching $SCRIPT_DIR/run_innov.sh"
 
-JOB_ID=`qsub $ARGS -v SAMPLE_LIST,DIR,PRODIGAL,STDERR_DIR,STDOUT_DIR,OUT -N run_innov -e "$STDERR_DIR" -o "$STDOUT_DIR" -J 1-$NUM_FILES $SCRIPT_DIR/run_innov.sh`
+JOB_ID=`qsub $ARGS -v SAMPLE_LIST,DIR,PRODIGAL,INNO_DIR,STDERR_DIR,STDOUT_DIR,OUT -N run_innov -e "$STDERR_DIR" -o "$STDOUT_DIR" -J 1-$NUM_FILES $SCRIPT_DIR/run_innov.sh`
 
 if [ "${JOB_ID}x" != "x" ]; then
       echo Job: \"$JOB_ID\"

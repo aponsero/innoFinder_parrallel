@@ -1,7 +1,7 @@
 export CWD=$PWD
 # where programs are
-export PRODIGAL="/rsgrps/bhurwitz/alise/tools/Prodigal/"
-export INNO_DIR=""
+export PRODIGAL="/rsgrps/bhurwitz/alise/tools/Prodigal"
+export INNO_DIR="/rsgrps/bhurwitz/alise/tools/inovirus_detector/Inovirus_detector"
 # where the dataset to prepare is
 export OUT="/rsgrps/bhurwitz/alise/my_data/Nostoc_project/Lichen_metagenomes/experiments/2-Viral_search_assembly1/Innovirus_detection"
 export DIR="/rsgrps/bhurwitz/alise/my_data/Nostoc_project/Lichen_metagenomes/experiments/2-Viral_search_assembly1/dataset1"
